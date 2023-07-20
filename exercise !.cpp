@@ -33,3 +33,20 @@ int main() {
             mahasiswa[i].diterima = false;
         }
     }
+    // Tampilkan daftar mahasiswa yang diterima/ditolak
+    int diterima = 0;
+    int ditolak = 0;
+    cout << "\nDaftar Mahasiswa yang Diterima/Ditolak:\n";
+    for (int i = 0; i < JUMLAH_MAHASISWA; i++) {
+        string status;
+        if (mahasiswa[i].diterima) {
+            status = "Diterima";
+            diterima++;
+        }
+        else {
+            status = "Ditolak";
+            ditolak++;
+        }
+
+        cout << mahasiswa[i].nama << "\t" << status << endl;
+    }
