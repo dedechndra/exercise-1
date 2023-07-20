@@ -50,3 +50,8 @@ int main() {
 
         cout << mahasiswa[i].nama << "\t" << status << endl;
     }
+    cout << "\nJumlah mahasiswa yang diterima: " << diterima << endl;
+    cout << "Jumlah mahasiswa yang ditolak: " << ditolak << endl;
+
+    return 0;
+}
